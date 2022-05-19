@@ -1,0 +1,10 @@
+name: create-react-app
+runtime: yaml
+resources:
+  web:
+    type: "aws-quickstart-static-website:index:Website"
+    properties:
+      withCDN: true
+      sitePath: "../build"
+outputs:
+  websiteURL: ${web.websiteURL}
