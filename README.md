@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+# Create React App - Deployed with Pulumi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a sample project generated with create react app. This demonstrates how to use Pulumi to deploy the site to AWS using the aws-static-website component with YAML. The Pulumi related infrastructure configuration can be found in the `infrastructure` directory. This will deploy the site to S3 along with a CloudFront CDN.
 
-## Available Scripts
+## Deploying to AWS
+
+### Prerequisites
+1. AWS account and credentials for access to AWS configured in your shell.
+1. Pulumi installed on your machine. See our [getting started](https://www.pulumi.com/docs/get-started/aws/) guide for information on how to get this set up.
+
+### Deploying with Pulumi
+1. Navigate to the `infrastructure` directory of this repository.
+1. Run `pulumi up` to start the deploy. There will be a preview shown in the CLI output of the resources that will be provisioned. Once confirmed the deployment process will begin.
+
+## Create React Available Scripts
 
 In the project directory, you can run:
 
@@ -39,32 +49,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
